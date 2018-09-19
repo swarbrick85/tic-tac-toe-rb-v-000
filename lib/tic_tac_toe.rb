@@ -136,10 +136,8 @@ end
 end
 
 def play(board)
-  x = 1
-  while x < 10 && !over?(board)
+  while !over?(board)
   turn(board)
-  x += 1
 end
 if won?(board)
 puts "Congratulations #{winner(board)}!"
