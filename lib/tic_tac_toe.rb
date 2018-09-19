@@ -48,7 +48,7 @@ def turn(board)
   r = input_to_index(q)
   s = valid_move?(board,r)
   if s == true
-    board[r] = "X"
+    board[r] = current_player(board)
     display_board(board)
   elsif !s 
   turn(board)
